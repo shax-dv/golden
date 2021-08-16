@@ -1,0 +1,338 @@
+@charset "UTF-8";
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@font-face {
+  font-family: 'DroidSerif-Italic';
+  src: local("☺"), url("../fonts/DroidSerif-Italic.woff") format("woff"), url("../fonts/DroidSerif-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.p_name {
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.text_title {
+  font-family: DroidSerif-Italic;
+  padding-bottom: 85px;
+  color: #808080;
+  text-align: center;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  color: #808080;
+}
+
+.promo {
+  height: 700px;
+  background: url(../img/header.jpg);
+}
+
+.promo .navbar {
+  padding-bottom: 214px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.promo .navbar-nav .nav-link {
+  color: #ffffff;
+  border-bottom: solid 1px transparent;
+  padding: 0;
+  margin: 0 10px;
+  padding-bottom: 0px;
+}
+
+.promo .nav-link:hover {
+  color: #808080;
+  border-bottom: solid 1px #fff;
+}
+
+.promo_center_block {
+  text-align: center;
+}
+
+.promo_center_block .promo_sub_title {
+  font-family: DroidSerif-Italic;
+  font-size: 40px;
+  color: #fff;
+}
+
+.promo_center_block h1 {
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-size: 75px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo_center_block .promo_button {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  height: 65px;
+  width: 240px;
+  background: #fed136;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 65px;
+  border-radius: 4px;
+}
+
+.services {
+  padding: 120px 0 110px;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.services h5 {
+  padding-top: 15px;
+}
+
+.services p {
+  color: #808080;
+}
+
+.portfolio {
+  background: #ededed;
+  padding: 120px 0 110px;
+  text-align: center;
+}
+
+.portfolio .bg {
+  background-color: #ffffff;
+  width: 290px;
+}
+
+.portfolio .p_name {
+  padding-top: 30px;
+}
+
+.portfolio .under_text {
+  color: #808080;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+.about {
+  padding: 120px;
+}
+
+.about .media {
+  width: 60%;
+  padding: 0 3px;
+}
+
+.about .media.float-right {
+  padding: 0 2px;
+}
+
+@media (max-width: 767px) {
+  .about .media {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.about .media figure,
+.about .media p {
+  margin-bottom: 0;
+}
+
+.about .line img {
+  text-align: center;
+  margin: -2px auto;
+  display: block;
+}
+
+.about .about_button {
+  border: 7px solid #f1f1f1;
+  width: 183px;
+  height: 184px;
+  background: #fed136;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  padding: 43px 30px;
+  text-decoration: none;
+}
+
+.team {
+  padding: 120px 0 100px;
+  background: #ededed;
+  text-align: center;
+}
+
+.team .p_name {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.team .duty {
+  padding: 0 0 0;
+}
+
+.team p {
+  font-size: 14px;
+  padding: 0 117px;
+  margin: 0 auto;
+}
+
+.team .photo {
+  border: 50%;
+}
+
+.team .networks {
+  font-size: 32px;
+  padding-bottom: 37px;
+}
+
+.team a {
+  color: #212529;
+}
+
+.logo {
+  padding: 60px;
+  text-align: center;
+}
+
+.contact {
+  background: url(../img/contact-bg.jpg) no-repeat 0 0/cover;
+  text-align: center;
+  padding: 120px;
+}
+
+.contact h2 {
+  color: #ffffff;
+}
+
+.contact .row {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.contact .form-control {
+  margin: 0 15px 27px 15px;
+  font-family: Montserrat;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+.contact #exampleFormControlTextarea1 {
+  height: 198px;
+  line-height: 38px;
+}
+
+.contact #exampleFormControlTextarea1 {
+  padding-left: 22px;
+}
+
+.contact textarea.form-control::-webkit-input-placeholder,
+.contact input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.contact textarea.form-control:-ms-input-placeholder,
+.contact input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.contact textarea.form-control::-ms-input-placeholder,
+.contact input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.contact textarea.form-control::placeholder,
+.contact input::placeholder {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.contact .promo_button {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  height: 65px;
+  width: 240px;
+  background: #fed136;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 65px;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 0 30px;
+}
+
+footer .media {
+  width: 57%;
+}
+
+footer a {
+  color: #212529;
+}
+
+footer .copyright {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  margin-right: 24px;
+  text-align: center;
+  line-height: 40px;
+  color: #808080;
+}
+
+footer .twitter:hover {
+  color: #1DA1F2;
+}
+
+footer .facebook:hover {
+  color: #4267B2;
+}
+
+footer .g-plus:hover {
+  color: #DB4437;
+}
+
+footer .pinterest:hover {
+  color: #E60023;
+}
