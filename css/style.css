@@ -298,6 +298,22 @@ p {
   border-radius: 4px;
 }
 
+.twitter:hover {
+  color: #1DA1F2;
+}
+
+.facebook:hover {
+  color: #4267B2;
+}
+
+.g-plus:hover {
+  color: #DB4437;
+}
+
+.pinterest:hover {
+  color: #E60023;
+}
+
 footer {
   text-align: center;
   font-size: 25px;
@@ -319,20 +335,4 @@ footer .copyright {
   text-align: center;
   line-height: 40px;
   color: #808080;
-}
-
-footer .twitter:hover {
-  color: #1DA1F2;
-}
-
-footer .facebook:hover {
-  color: #4267B2;
-}
-
-footer .g-plus:hover {
-  color: #DB4437;
-}
-
-footer .pinterest:hover {
-  color: #E60023;
 }
