@@ -113,7 +113,7 @@ p
 		padding-bottom: 30px
 
 .about
-	padding: 120px
+	padding: 120px 0
 	.media
 		width: 60%
 		padding: 0 3px
@@ -179,14 +179,13 @@ p
 .contact
 	background: url(../img/contact-bg.jpg)no-repeat 0 0 / cover
 	text-align: center
-	padding: 120px
+	padding: 120px 0
 	h2
 		color: #ffffff
 	.row
 		@include monserat_b
 		
 	.form-control
-		margin: 0 15px 27px 15px
 		@include monserat_b
 		text-transform: uppercase
 		line-height: 15px
@@ -245,15 +244,7 @@ footer
 		line-height: 40px
 		color: #808080 
 
-
-@media ( max-width: 767px )
-	.promo
-		.promo_sub_title
-			font-size: 30px
-		h1
-			font-size: 50px
-	.bg
-			margin: 0 auto 50px
+@media ( max-width: 575px )
 	.about
 		.media
 			flex-direction: column
@@ -263,9 +254,8 @@ footer
 			margin: 0 auto 20px!important
 		.line
 			visibility: hidden
-	.team
-		img
-			margin-bottom: 15px
+	
+
 	
 @media ( max-width: 991px )
 	.portfolio
@@ -289,7 +279,30 @@ footer
 			margin-bottom: 15px
 	#menu
 		background: rgba(0,0,0,0.4)
-    	padding: 15px
-    	border-radius: 20px 0 20px 20px!important
+		padding: 15px
+		border-radius: 20px 0 20px 20px!important
 	.promo .navbar-nav .nav-link
 		padding-bottom: 8px
+
+@media ( max-width: 767px )
+	.promo
+		.promo_sub_title
+			font-size: 30px
+		h1
+			font-size: 50px
+	.portfolio
+		.bg
+			margin: 0 auto 50px
+			max-width: 290px
+	.about
+		.media
+			flex-direction: column
+			text-align: center
+		figure
+			order: -1
+			margin: 0 auto 20px!important
+		.line
+			visibility: hidden
+	.team
+		img
+			margin-bottom: 15px

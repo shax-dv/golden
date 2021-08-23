@@ -139,7 +139,7 @@ p {
 }
 
 .about {
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .about .media {
@@ -233,7 +233,7 @@ p {
 .contact {
   background: url(../img/contact-bg.jpg) no-repeat 0 0/cover;
   text-align: center;
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .contact h2 {
@@ -246,7 +246,6 @@ p {
 }
 
 .contact .form-control {
-  margin: 0 15px 27px 15px;
   font-family: Montserrat;
   font-weight: bold;
   text-transform: uppercase;
@@ -341,16 +340,7 @@ footer .copyright {
   color: #808080;
 }
 
-@media (max-width: 767px) {
-  .promo .promo_sub_title {
-    font-size: 30px;
-  }
-  .promo h1 {
-    font-size: 50px;
-  }
-  .bg {
-    margin: 0 auto 50px;
-  }
+@media (max-width: 575px) {
   .about .media {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -366,9 +356,6 @@ footer .copyright {
   }
   .about .line {
     visibility: hidden;
-  }
-  .team img {
-    margin-bottom: 15px;
   }
 }
 
@@ -402,10 +389,42 @@ footer .copyright {
   }
   #menu {
     background: rgba(0, 0, 0, 0.4);
-    background-padding: 15px;
-    background-border-radius: 20px 0 20px 20px !important;
+    padding: 15px;
+    border-radius: 20px 0 20px 20px !important;
   }
   .promo .navbar-nav .nav-link {
     padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo .promo_sub_title {
+    font-size: 30px;
+  }
+  .promo h1 {
+    font-size: 50px;
+  }
+  .portfolio .bg {
+    margin: 0 auto 50px;
+    max-width: 290px;
+  }
+  .about .media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .about figure {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 auto 20px !important;
+  }
+  .about .line {
+    visibility: hidden;
+  }
+  .team img {
+    margin-bottom: 15px;
   }
 }
