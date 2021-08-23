@@ -18,9 +18,12 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
   <!-- Css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!--slik css-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" href="css/style.css">
-
+  <!--font awesome-->
   <script src="https://kit.fontawesome.com/32acb3f471.js" crossorigin="anonymous"></script>
+
 
   
 
@@ -31,19 +34,19 @@
   <header>
     <section class="promo">
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark navbar-expand-lg">
           <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
+            <div class="navbar-nav ml-auto" id="menu">
               <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-link" href="#">services</a>
-              <a class="nav-link" href="#">Portfolio</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#services">services</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </div>
           </div>
         </nav>
@@ -56,7 +59,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <h2 class="font text-center text-uppercase font-weight-bold mb-2">services</h2>
         <div class="text_title">Proin iaculis purus consequat sem cure.</div>
@@ -82,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="font text-center text-uppercase font-weight-bold mb-2">Our portfolio</h2>
         <div class="text_title">Lorem ipsum dolor sit amet consectetur</div>
@@ -131,19 +134,19 @@
           </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="text-center text-uppercase font-weight-bold mb-2">About Us</h2>
         <div class="text_title">Proin iaculis purus consequat sem cure. </div>
         <div class="row">
           <div class="col-lg-12">
             <div class="media">
-              <div class="media-body text-right">
+              <div class="media-body text-lg-right">
                 <h5>July 2010 <br>Our Humble Beginnings</br></h5>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet suscipit est fugit placeat
                   voluptates atqu volupt sit amet conssit amet cons</p>
               </div>
-              <figure class="ml-5"><img src="img/about/Image1.png" alt=""></figure>
+              <figure class="ml-md-5"><img src="img/about/Image1.png" alt=""></figure>
             </div>
           </div>
         </div>
@@ -155,7 +158,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="media float-right">
-              <figure class="mr-5"><img src="img/about/Image1.png" alt=""></figure>
+              <figure class="mr-md-5"><img src="img/about/Image1.png" alt=""></figure>
               <div class="media-body">
                 <h5>July 2010 <br>Our Humble Beginnings</br></h5>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet suscipit est fugit placeat
@@ -173,12 +176,12 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="media">
-              <div class="media-body text-right">
+              <div class="media-body text-lg-right">
                 <h5>July 2010 <br>Our Humble Beginnings</br></h5>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet suscipit est fugit placeat
                   voluptates atqu volupt sit amet conssit amet cons</p>
               </div>
-              <figure class="ml-5"><img src="img/about/Image1.png" alt=""></figure>
+              <figure class="ml-md-5"><img src="img/about/Image1.png" alt=""></figure>
             </div>
           </div>
         </div>
@@ -235,35 +238,43 @@
     </section>
     <div class="logo">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3 m-auto">
+        <div class="responsive">
+          <div class="px-3">
             <img src="img/logo/Envato.jpg">
           </div>
-          <div class="col-md-3">
-            <img style="height:43px" src="img/logo/WordPress.png">
-          </div>
-          <div class="col-md-3">
+          <div>
+            <img src="img/logo/WordPress.png">
+          </div  class="px-3">
+          <div class="px-3">
             <img src="img/logo/Tuts+.jpg">
           </div>
-          <div class="col-md-3">
+          <div class="px-3">
             <img src="img/logo/Microlancer copy.jpg">
           </div>
         </div>
       </div>
     </div>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h2>Contact us</h2>
         <div class="text_title">Proin iaculis purus consequat sem cure.</div>
         <form>
           <div class="row">
-            <div class="col">
-              <input type="text" class="form-control form-control-lg" placeholder="your name*">
-              <input type="text" class="form-control form-control-lg" placeholder="your e-mail*">
-              <input type="text" class="form-control form-control-lg" placeholder="subject">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" placeholder="your name*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" placeholder="your e-mail*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" placeholder="subject">
+              </div>
             </div>
-            <div class="col">
-              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="your message*" rows="3"></textarea>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="your message*" rows="3"></textarea>
+              </div>
             </div>
           </div>
         </form>
@@ -293,12 +304,12 @@
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!--slik js--> 
+    <script src="js/script.js"></script>
 </body>
 
 </html>

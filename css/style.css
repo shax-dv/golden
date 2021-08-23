@@ -226,6 +226,10 @@ p {
   text-align: center;
 }
 
+.logo img {
+  width: 100%;
+}
+
 .contact {
   background: url(../img/contact-bg.jpg) no-repeat 0 0/cover;
   text-align: center;
@@ -335,4 +339,73 @@ footer .copyright {
   text-align: center;
   line-height: 40px;
   color: #808080;
+}
+
+@media (max-width: 767px) {
+  .promo .promo_sub_title {
+    font-size: 30px;
+  }
+  .promo h1 {
+    font-size: 50px;
+  }
+  .bg {
+    margin: 0 auto 50px;
+  }
+  .about .media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .about figure {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 auto 20px !important;
+  }
+  .about .line {
+    visibility: hidden;
+  }
+  .team img {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio .bg {
+    margin: 0 auto 50px;
+    width: auto;
+  }
+  .portfolio .bg img {
+    max-width: 100%;
+  }
+  .about .media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .about figure {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 auto 20px !important;
+  }
+  .about .line {
+    visibility: hidden;
+  }
+  .team img {
+    margin-bottom: 15px;
+  }
+  #menu {
+    background: rgba(0, 0, 0, 0.4);
+    background-padding: 15px;
+    background-border-radius: 20px 0 20px 20px !important;
+  }
+  .promo .navbar-nav .nav-link {
+    padding-bottom: 8px;
+  }
 }

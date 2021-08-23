@@ -37,6 +37,8 @@ h2
 p
 	@include R_Slab
 	color: #808080 
+
+
 	
 .promo
 	height: 700px 
@@ -170,6 +172,9 @@ p
 .logo
 	padding: 60px
 	text-align: center
+
+	img
+		width: 100%
 	
 .contact
 	background: url(../img/contact-bg.jpg)no-repeat 0 0 / cover
@@ -241,7 +246,50 @@ footer
 		color: #808080 
 
 
-		
-
-
-		
+@media ( max-width: 767px )
+	.promo
+		.promo_sub_title
+			font-size: 30px
+		h1
+			font-size: 50px
+	.bg
+			margin: 0 auto 50px
+	.about
+		.media
+			flex-direction: column
+			text-align: center
+		figure
+			order: -1
+			margin: 0 auto 20px!important
+		.line
+			visibility: hidden
+	.team
+		img
+			margin-bottom: 15px
+	
+@media ( max-width: 991px )
+	.portfolio
+		.bg
+			margin: 0 auto 50px
+			width: auto
+			img
+				max-width: 100%
+	.about
+		.media
+			flex-direction: column
+			text-align: center
+			width: 100%
+		figure
+			order: -1
+			margin: 0 auto 20px!important
+		.line
+			visibility: hidden
+	.team
+		img
+			margin-bottom: 15px
+	#menu
+		background: rgba(0,0,0,0.4)
+    	padding: 15px
+    	border-radius: 20px 0 20px 20px!important
+	.promo .navbar-nav .nav-link
+		padding-bottom: 8px
